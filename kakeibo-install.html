@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>家計管理</title>
+
+  <link rel="apple-touch-icon" href="./kakeibo-icon.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="家計管理">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+
+      background: #f5f5f7;
+      color: #1d1d1f;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 380px;
+    }
+
+    .icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 26px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.10);
+
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .description {
+      margin: 0 0 32px;
+      color: #6e6e73;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .guide {
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 18px;
+
+      font-size: 15px;
+      line-height: 1.8;
+
+      box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .guide strong {
+      color: #1d1d1f;
+    }
+  </style>
+
+  <script>
+    // ホーム画面から起動した場合だけGAS本体へ転送
+    if (window.navigator.standalone === true) {
+      window.location.replace(
+        "https://script.google.com/macros/s/AKfycbyiexfxav_rWYUDl2mZl5aksko42iZ6fqyHY9Cr8dDmroBlaYOroYd5p4MTobAQR2Rd/exec"
+      );
+    }
+  </script>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <img
+      src="./kakeibo-icon.png"
+      alt="家計管理"
+      class="icon"
+    >
+
+    <h1>家計管理</h1>
+
+    <p class="description">
+      ホーム画面からすぐに起動できるようにします。
+    </p>
+
+    <div class="guide">
+      Safariの
+      <strong>共有ボタン</strong>
+      をタップし、<br>
+
+      <strong>「ホーム画面に追加」</strong>
+      を選択してください。
+    </div>
+
+  </main>
+
+</body>
+</html>
