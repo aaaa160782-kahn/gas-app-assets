@@ -7,9 +7,67 @@
   <title>ToDo</title>
 
   <link rel="apple-touch-icon" href="./todo-icon.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ToDo">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+      color: #333;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    }
+
+    .box {
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 6px 0;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("load", function () {
+
+      const isStandalone =
+        window.navigator.standalone === true ||
+        window.matchMedia("(display-mode: standalone)").matches;
+
+      if (isStandalone) {
+        window.location.replace(
+          "https://script.google.com/macros/s/AKfycbz0qcV7f_fTi1scQootlypa0Kf8Os1qx-_s66_hXPggmVJ9xJRVSoSF_qPdHrIrk2Bf-A/exec"
+        );
+      }
+
+    });
+  </script>
 </head>
 
 <body>
-  <p>このページを「ホーム画面に追加」してください。</p>
+  <div class="box">
+    <h1>ToDo</h1>
+    <p>このページをSafariの共有メニューから</p>
+    <p><strong>「ホーム画面に追加」</strong>してください。</p>
+  </div>
 </body>
 </html>
